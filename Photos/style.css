@@ -1,0 +1,179 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* nagłówek */
+header{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.3)), url(images/header-img.jpeg) no-repeat center center;
+
+}
+.nav-menu{
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5));
+  padding: 30px;
+  transition: all 0.5s;
+}
+.menu-item{
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color 0.5s;
+}
+.menu-item:hover{
+  color: burlywood;
+}
+.nav-active{
+  color: chocolate;
+}
+.line1, .line2, .line3{
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .5s;
+}
+.change .line1{
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.change .line2{
+  opacity: 0;
+}
+.change .line3{
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.custom-banner{
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7));
+}
+/* nawigacja */
+    
+/* nawigacja end */
+/* baner --> */
+.banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.banner-heading{
+  animation-name: anim;
+  animation-duration: 2s;
+}
+.banner-p{
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.x{
+  margin-left: -0.1em;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* baner end */
+
+/* nagłówek end */
+
+/* misja */
+.mission{
+  background: #111;
+}
+.underline{
+  width: 200px;
+  height: 3px;
+  background-color: #eee;
+  margin: auto;
+}
+
+/* animacje aparatu */
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fromLeft {
+  animation: fromLeft 3s;
+}
+.fromRight {
+  animation: fromRight 3s;
+}
+/* animacje aparatu end */
+
+/* misja end */
+
+/* kolekcja */
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+.heading {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #444;
+  width: 70%;
+  opacity: .7;
+  cursor: pointer;
+  transition: all .5s;
+}
+.heading:hover{
+  opacity: 1;
+}
+/* kolekcja end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
